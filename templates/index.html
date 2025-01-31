@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Google</h1>
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Search..." required>
+            <button type="submit">Google Search</button>
+        </form>
+        <form action="/lucky" method="get">
+            <input type="text" name="query" placeholder="Search..." required>
+            <button type="submit">I'm Feeling Lucky</button>
+        </form>
+        <div class="links">
+            <a href="/image_search">Google Image Search</a>
+            <a href="/advanced_search">Google Advanced Search</a>
+        </div>
+    </div>
+</body>
+</html>

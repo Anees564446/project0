@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Google Search</h1>
+        <form action="/advanced_search_results" method=""get>
+            <label for="all_words">Find pages with "all these words":</label>
+            <input type="text" name="all_words" id="all_words"><br><br>
+            <label for="exact_phrase">Find pages with "this exact word or phrase":</label>
+            <input type="text" name="exact_phrase" id="exact_phrase"><br><br>
+            <label for="any_words">Find pages with "any of these words":</label>
+            <input type="text" name="any_words" id="any_words"><br><br>
+            <label for="none_words">Find pages with "none of these words":</label>
+            <input type="text" name="none_words" id="none_words"><br><br>
+            <button type="submit" style="background-color: #4285F4; color: white;">Advanced Search</button>
+        </form>
+        <div class="links">
+            <a href="/">Back to Google Search</a>
+        </div>
+    </div>
+</body>
+</html>
